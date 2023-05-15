@@ -54,9 +54,12 @@ class MainProgram {
      * @param array
      * @return Summe aller Zahlen im Array
      */
-    private static int sumUp(int[] array){
+    private static int sumUp(int[] array) {
         int result = 0;
         //Hier muss Quellcode ergänzt werden.
+        for (int i = 0; i < array.length; i++) {
+            result += array[i];
+        }
         return result;
     }
 
@@ -67,9 +70,13 @@ class MainProgram {
      * @param array
      * @return Anzahl der negativen Zahlen im Array
      */
-    private static int countNegatives(int[] array){
+    private static int countNegatives(int[] array) {
         int result = 0;
-        //Hier muss Quellcode ergänzt werden.
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0) {
+                result++;
+            }
+        }
         return result;
     }
 
@@ -80,9 +87,14 @@ class MainProgram {
      * @param array
      * @return Summe aller negativen Zahlen im Array
      */
-    private static int sumUpNegatives(int[] array){
+    private static int sumUpNegatives(int[] array) {
         int result = 0;
         //Hier muss Quellcode ergänzt werden.
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 0) {
+                result += array[i];
+            }
+        }
         return result;
     }
 
